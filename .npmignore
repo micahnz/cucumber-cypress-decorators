@@ -1,0 +1,11 @@
+# deps
+.gitignore
+
+.git/
+.unotes/
+node_modules/
+
+# source
+decorators.ts
+index.ts
+tsconfig.json

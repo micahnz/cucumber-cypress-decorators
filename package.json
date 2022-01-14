@@ -1,0 +1,36 @@
+{
+  "name": "cucumber-cypress-decorators",
+  "version": "0.1.0",
+  "description": "Typescript Decorators for Cucumber with support for Cypress",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc --declaration"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michaelmitchell/cucumber-decorators.git"
+  },
+  "keywords": [
+    "typescript",
+    "decorators",
+    "cucumber",
+    "cypress"
+  ],
+  "files": [
+    "*.js",
+    "*.d.ts"
+  ],
+  "author": "MIchael Mitchell",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/michaelmitchell/cucumber-decorators/issues"
+  },
+  "homepage": "https://github.com/michaelmitchell/cucumber-decorators#readme",
+  "dependencies": {
+    "cypress-cucumber-preprocessor": "^4.3.1"
+  },
+  "devDependencies": {
+    "cypress": "^9.2.1",
+    "typescript": "^4.5.4"
+  }
+}

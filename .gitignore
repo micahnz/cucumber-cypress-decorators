@@ -1,0 +1,4 @@
+*.d.ts
+*.js
+.unotes/
+node_modules/
