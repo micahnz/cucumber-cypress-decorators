@@ -30,7 +30,7 @@ Feature: Simple maths
       | 99  | 1234      | 1333   |
       | 12  | 5         | 17     |
 ```
-<br>
+
 **Typescript integration file**
 
 ``` typescript
