@@ -1,24 +1,36 @@
-import * as Cucumber from 'cypress-cucumber-preprocessor/steps'
-import { decorateFeature, decorateStep } from './decorators'
+import * as Cucumber from "cypress-cucumber-preprocessor/steps";
+import { decorateFeature, decorateStep } from "./decorators";
+
+// add cypress env var custom type
+Cucumber.defineParameterType({
+  name: "env",
+  regexp: /{([^}]+)}/,
+  transformer: (s) => {
+    return Cypress.env(s);
+  },
+});
 
 // register class by feature name for use with decorators
-export const Feature = decorateFeature
+export const Feature = decorateFeature;
 
 // create decorators from cypress-cucumber-preprocessor steps
-export const After = decorateStep(Cucumber.After)
-export const And = decorateStep(Cucumber.And)
-export const Before = decorateStep(Cucumber.Before)
-export const But = decorateStep(Cucumber.But)
-export const Given = decorateStep(Cucumber.Given)
-export const Then = decorateStep(Cucumber.Then)
-export const When = decorateStep(Cucumber.When)
+export const After = decorateStep(Cucumber.After);
+export const And = decorateStep(Cucumber.And);
+export const Before = decorateStep(Cucumber.Before);
+export const But = decorateStep(Cucumber.But);
+export const Given = decorateStep(Cucumber.Given);
+export const Then = decorateStep(Cucumber.Then);
+export const When = decorateStep(Cucumber.When);
 
 // lower case support for personal preference
-export const after = After
-export const and = And
-export const before = Before
-export const but = But
-export const feature = Feature
-export const given = Given
-export const then = Then
-export const when = When
+export const after = After;
+export const and = And;
+export const before = Before;
+export const but = But;
+export const feature = Feature;
+export const given = Given;
+export const then = Then;
+export const when = When;
+
+//
+export const defineParameterType = Cucumber.defineParameterType;

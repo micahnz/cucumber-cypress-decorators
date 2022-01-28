@@ -1,6 +1,6 @@
 {
   "name": "cucumber-cypress-decorators",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "Typescript Decorators for Cucumber with support for Cypress",
   "main": "index.js",
   "scripts": {
